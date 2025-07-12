@@ -1,94 +1,106 @@
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #f4f4f4;
   color: #333;
 }
+
 header {
-  background-color: #344276;
+  background-color: #1a237e;
   color: white;
-  text-align: center;
   padding: 20px;
-}
-nav {
-  background-color: #DF3338;
   text-align: center;
 }
+
+nav {
+  background-color: #3949ab;
+  padding: 10px;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
+
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
-.banner {
-  background-color: #FFCD00;
-  color: #344276;
-  text-align: center;
-  padding: 40px 20px;
-}
+
 section {
-  padding: 20px;
-  background: white;
-  margin: 15px;
+  padding: 40px 20px;
+  background-color: white;
+  margin: 10px;
   border-radius: 8px;
 }
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .gallery img {
-  width: 30%;
-  margin: 5px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.donar-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #43a047;
+  color: white;
+  text-decoration: none;
   border-radius: 5px;
 }
-form input, form textarea {
+
+form input, form textarea, form button {
   width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
   padding: 10px;
-  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
+
 form button {
-  background-color: #344276;
+  background-color: #1a237e;
   color: white;
   border: none;
-  padding: 10px 20px;
-  cursor: pointer;
 }
+
 footer {
-  background-color: #7BB6EE;
-  color: white;
   text-align: center;
   padding: 20px;
-}
-.socials i {
-  font-size: 24px;
-  margin: 0 10px;
+  background-color: #1a237e;
   color: white;
 }
+
+.socials a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
 .whatsapp-float {
   position: fixed;
-  width: 60px;
-  height: 60px;
   bottom: 20px;
   right: 20px;
   background-color: #25d366;
   color: white;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  line-height: 60px;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
   z-index: 100;
-  text-decoration: none;
-}
-.donar-btn {
-  background-color: #DF3338;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 6px;
-  display: inline-block;
-  margin-top: 10px;
 }
